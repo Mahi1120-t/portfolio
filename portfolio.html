@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
+     <form onsubmit = "return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="portfolio.js"></script>
     <header>
         <h1>My Portfolio</h1>
         <p>Welcome to my portfolio! Here you can find a collection of my work and projects.</p>
     </header>
     <nav>
         <ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-        <section id="about">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button onclick ="toggleAbout()">Toggle About Section</button>
+    <section id="about">
         <h2>About Me</h2>
         <p name="name">Trivedi Mahi Rakeshkumar</p>
         <p>Student at SAL Engineerig & Technical Institut</p>
-            <p>I am a passionate web developer with a love for creating beautiful and functional websites. I have
+        <p>I am a passionate web developer with a love for creating beautiful and functional websites. I have
                 experience in HTML, CSS, and JavaScript, and I am always eager to learn new technologies.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
             </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
             <ul>
-                <li><a href="https://drive.google.com/file/d/1y5kKjlG-rDzO99Oz-483mwDnAxraZTpj/view?usp=sharing">Flipkart Clone</a> - A clone of the popular
+            <li><a href="https://drive.google.com/file/d/1y5kKjlG-rDzO99Oz-483mwDnAxraZTpj/view?usp=sharing">Flipkart Clone</a> - A clone of the popular
                     e-commerce website Flipkart, built using HTML, CSS, and JavaScript.</li>
-                <li><a href= "https://drive.google.com/file/d/1eLQ8yuq5CbYKIN6U8d9UcVq9fFdeqbW_/view?usp=sharing">Spotify Clone</a> - A clone of the music
+            <li><a href= "https://drive.google.com/file/d/1eLQ8yuq5CbYKIN6U8d9UcVq9fFdeqbW_/view?usp=sharing">Spotify Clone</a> - A clone of the music
                     streaming service Spotify, featuring a responsive design and interactive elements.</li>
             </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
             <p>Phone: <a href="+91 7041622409">+91 7041622409</a></p>
             <p>Email: <a href="mahi.trivedi1120@gmail.com">mahi.trivedi1120@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/mahi-trivedi-3ba654327">Mahi Trivedi</a></p>
+    </section>
 </body>
 </html>
