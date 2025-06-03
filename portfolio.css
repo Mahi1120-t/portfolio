@@ -15,7 +15,7 @@ nav a {
   text-decoration: none;
 }
 nav ul{
-  lifet-style: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -42,7 +42,16 @@ section{
 body {
   font-family: 'Poppins', sans-serif;
 }
-
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  section {
+    margin: 5px;
+    padding: 15px;
+  }
+}
 
 
 
