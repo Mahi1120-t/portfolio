@@ -1,3 +1,14 @@
+let text = "Mahi Trivedi";
+let i = 0;
+
+function typeEffect() {
+  if (i < text.length) {
+    document.getElementById("intro").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 100);
+  }
+}
+window.onload = typeEffect;
 function toggleAbout() {
     const aboutSection = document.getElementById('about');
     if (aboutSection.style.display === 'none') {

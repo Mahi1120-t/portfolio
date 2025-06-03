@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="portfolio.js"></script>
      <form onsubmit = "return validateForm()">
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Your Email" required>
         <button type="submit">Submit</button>
     </form>
-    <script src="portfolio.js"></script>
     <header>
         <h1>My Portfolio</h1>
         <p>Welcome to my portfolio! Here you can find a collection of my work and projects.</p>
@@ -26,11 +26,12 @@
         <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <button onclick ="toggleAbout()">Toggle About Section</button>
     <section id="about">
+        <h1 id="intro"></h1>
         <h2>About Me</h2>
         <p name="name">Trivedi Mahi Rakeshkumar</p>
         <p>Student at SAL Engineerig & Technical Institut</p>
+        <button onclick ="toggleAbout()">Toggle About Section</button>
         <p>I am a passionate web developer with a love for creating beautiful and functional websites. I have
                 experience in HTML, CSS, and JavaScript, and I am always eager to learn new technologies.</p>
     </section>
